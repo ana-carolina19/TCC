@@ -1,0 +1,7 @@
+{
+  "name": "ChamaAi",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
