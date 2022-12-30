@@ -1,7 +1,46 @@
-.img{
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
   margin-top: 75px;
 }
 
-ion-button{
+ion-button {
   margin-top: 20px;
+}
+
+
+span.loading {
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+span.loading::after {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(230, 216, 216);
+  content: " ";
+  position: absolute;
+  top: 0;
+  border-radius: 50px;
+  animation: loading 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-60%);
+  }
+
+  100% {
+    transform: translateX(20%);
+
+  }
 }
