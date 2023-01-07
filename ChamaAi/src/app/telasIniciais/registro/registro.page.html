@@ -5,40 +5,56 @@
     <div>
       <img src="https://raw.githubusercontent.com/Kesllys/TCC/main/Sem%20fonte%201.png" alt="">
     </div>
+
+
   </header>
 
-  <ion-card color="amarelo-claro">
-    <ion-list>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-      <ion-item color="amarelo-claro">
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-    </ion-list>
+  <ion-card-title class="ion-text-center">Cadastro</ion-card-title>
 
+
+  <ion-card class="cardBox" color="amarelo-claro">
+
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-label position="floating">Nome completo</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+
+
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-select interface="popover" placeholder="Sou">
+        <ion-select-option value="cliente">Cliente</ion-select-option>
+        <ion-select-option value="moto-taxi">Moto-Taxi</ion-select-option>
+        <ion-select-option value="ambos">Ambos</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-label class="nascimento">Data de nascimento:</ion-label>
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-input type="date"></ion-input>
+    </ion-item>
+
+    <ion-button routerLink="/registro-parte2" color="preto" expand="block">
+      confirmar
+    </ion-button>
+    <ion-button color="preto" expand="block">
+      voltar
+    </ion-button>
   </ion-card>
 
 </ion-content>

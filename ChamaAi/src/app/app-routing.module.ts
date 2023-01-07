@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'login-cadastro',
     loadChildren: () => import('./telasIniciais/login-cadastro/login-cadastro.module').then( m => m.LoginCadastroPageModule)
+  },
+  {
+    path: 'registro-parte2',
+    loadChildren: () => import('./telasIniciais/registro-parte2/registro-parte2.module').then( m => m.RegistroParte2PageModule)
   }
 ];
 @NgModule({
