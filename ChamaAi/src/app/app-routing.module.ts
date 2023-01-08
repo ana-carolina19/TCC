@@ -5,31 +5,35 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'introducao',
-    pathMatch:'full',
+    pathMatch: 'full',
   },
   {
     path: 'tabs',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    loadChildren: () => import('./servico/tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('./servico/tab1/tab1.module').then(m => m.Tab1PageModule)
   },
   {
     path: 'registro',
-    loadChildren: () => import('./telasIniciais/registro/registro.module').then( m => m.RegistroPageModule)
+    loadChildren: () => import('./telasIniciais/registro/registro.module').then(m => m.RegistroPageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./telasIniciais/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./telasIniciais/login/login.module').then(m => m.LoginPageModule)
   },
   {
     path: 'introducao',
-    loadChildren: () => import('./telasIniciais/introducao/introducao.module').then( m => m.IntroducaoPageModule)
+    loadChildren: () => import('./telasIniciais/introducao/introducao.module').then(m => m.IntroducaoPageModule)
   },
   {
     path: 'login-cadastro',
-    loadChildren: () => import('./telasIniciais/login-cadastro/login-cadastro.module').then( m => m.LoginCadastroPageModule)
+    loadChildren: () => import('./telasIniciais/login-cadastro/login-cadastro.module').then(m => m.LoginCadastroPageModule)
   },
   {
     path: 'registro-parte2',
-    loadChildren: () => import('./telasIniciais/registro-parte2/registro-parte2.module').then( m => m.RegistroParte2PageModule)
+    loadChildren: () => import('./telasIniciais/registro-parte2/registro-parte2.module').then(m => m.RegistroParte2PageModule)
   }
 ];
 @NgModule({
@@ -38,4 +42,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
