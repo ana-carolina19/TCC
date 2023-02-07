@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'moto-taxi',
     loadChildren: () => import('./servico/moto-taxi/moto-taxi.module').then( m => m.MotoTaxiPageModule)
+  },  {
+    path: 'esqueci-senha',
+    loadChildren: () => import('./telasIniciais/esqueci-senha/esqueci-senha.module').then( m => m.EsqueciSenhaPageModule)
   }
+
 ];
 @NgModule({
   imports: [
