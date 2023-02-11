@@ -1,9 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="preto">
+    <ion-back-button color="branco" slot="start"></ion-back-button>
+    <ion-title class="ion-text-center">
+      Esqueceu a senha
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
 <ion-content color="amarelo"><ion-back-button slot="start"></ion-back-button>
 
   <img src="https://github.com/Kesllys/TCC/blob/main/Logo.png?raw=true">
 
   <div class="tituloCenter">
-    <h1>Esqueceu a senha</h1>
+    <p>Informe o e-mail para o qual deseja<br>redefinir a sua senha.</p>
   </div>
 
   <ion-card color="amarelo-claro">
@@ -16,7 +26,7 @@
       <ion-col >
         <div class="botao">
           <ion-button routerLink="/login-cadastro" color="preto" class="Ubotao" size="block">
-            <ion-label><ion-icon name="arrow-back-outline"></ion-icon>Voltar</ion-label>
+            <ion-label>Redefinir senha</ion-label>
           </ion-button>
         </div>
       </ion-col>

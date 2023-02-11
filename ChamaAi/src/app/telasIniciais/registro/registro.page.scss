@@ -1,14 +1,15 @@
-header {
-  display: flex;
-  justify-content: end;
-
-  margin-top: 15px;
-}
-
 ion-card {
   border-radius: 20px;
 }
 
+ion-card-subtitle{
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+ion-icon{
+  margin-left: 10px;
+}
 
 ion-input{
   margin-bottom: 5px;
@@ -20,4 +21,8 @@ ion-card-title{
 
 .nascimento{
   margin-left: 16px;
+}
+
+ion-button{
+  border-radius: 50%;
 }

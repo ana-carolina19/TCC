@@ -1,46 +1,42 @@
-<ion-back-button slot="start"></ion-back-button>
+<ion-header [translucent]="true">
+  <ion-toolbar color="preto">
+    <ion-back-button color="branco" slot="start"></ion-back-button>
+    <ion-title class="ion-text-center">
+      Criar conta
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
 <ion-content color="amarelo">
 
-  <header>
-    <div>
-      <img src="https://raw.githubusercontent.com/Kesllys/TCC/main/Sem%20fonte%201.png" alt="">
-    </div>
-
-
-  </header>
-
-  <ion-card-title class="ion-text-center">Cadastro</ion-card-title>
+  <ion-card-subtitle class="ion-text-center">Só levará alguns segundos</ion-card-subtitle>
 
 
   <ion-card class="cardBox" color="amarelo-claro">
 
     <ion-item lines="none" color="amarelo-claro">
-      <ion-label position="floating">Nome completo</ion-label>
+      <ion-label position="floating">Nome:</ion-label>
       <ion-input></ion-input>
     </ion-item>
 
     <ion-item lines="none" color="amarelo-claro">
-      <ion-label position="floating">Email</ion-label>
+      <ion-label position="floating">Email:</ion-label>
       <ion-input></ion-input>
     </ion-item>
 
     <ion-item lines="none" color="amarelo-claro">
-      <ion-label position="floating">CPF</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-
-    <ion-item lines="none" color="amarelo-claro">
-      <ion-label position="floating">Telefone</ion-label>
+      <ion-label position="floating">Telefone:</ion-label>
       <ion-input></ion-input>
     </ion-item>
 
 
 
     <ion-item lines="none" color="amarelo-claro">
-      <ion-select interface="popover" placeholder="Sou">
-        <ion-select-option value="cliente">Cliente</ion-select-option>
-        <ion-select-option value="moto-taxi">Moto-Taxi</ion-select-option>
-        <ion-select-option value="ambos">Ambos</ion-select-option>
+      <ion-select interface="popover"  placeholder="Gênero">
+        <ion-select-option value="masculino">Masculino</ion-select-option>
+        <ion-select-option value="feminino">Feminino</ion-select-option>
+        <ion-select-option value="outros">Outros</ion-select-option>
       </ion-select>
     </ion-item>
 
@@ -49,12 +45,18 @@
       <ion-input type="date"></ion-input>
     </ion-item>
 
-    <ion-button routerLink="/registro-parte2" color="preto" expand="block">
-      confirmar
-    </ion-button>
-    <ion-button routerLink="/login-cadastro" color="preto" expand="block">
-      voltar
-    </ion-button>
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-label position="floating">Senha:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" color="amarelo-claro">
+      <ion-label position="floating">Confirma a senha:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
   </ion-card>
 
+
+  <!-- PRECISO CRIAR A VALIDAÇÃO DO LOGIN-->
+      <ion-button routerLink="/registro-parte2" color="preto" size="large" expand="full">Confirmar<ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
 </ion-content>

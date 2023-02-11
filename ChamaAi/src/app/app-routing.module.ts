@@ -32,13 +32,10 @@ const routes: Routes = [
     loadChildren: () => import('./telasIniciais/login-cadastro/login-cadastro.module').then(m => m.LoginCadastroPageModule)
   },
   {
-    path: 'registro-parte2',
-    loadChildren: () => import('./telasIniciais/registro-parte2/registro-parte2.module').then(m => m.RegistroParte2PageModule)
-  },
-  {
     path: 'moto-taxi',
     loadChildren: () => import('./servico/moto-taxi/moto-taxi.module').then( m => m.MotoTaxiPageModule)
-  },  {
+  },
+  {
     path: 'esqueci-senha',
     loadChildren: () => import('./telasIniciais/esqueci-senha/esqueci-senha.module').then( m => m.EsqueciSenhaPageModule)
   }

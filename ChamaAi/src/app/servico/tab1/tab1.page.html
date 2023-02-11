@@ -2,7 +2,7 @@
 
   <ion-toolbar color="amarelo">
     <ion-title class="ion-text-center">
-      Sedes
+      Sedes <ion-icon name="location-outline"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,55 +10,44 @@
 
 <ion-content color="amarelo-claro" [fullscreen]="true">
 
-  <ion-searchbar color="amarelo" animated="true" placeholder="  "></ion-searchbar>
+  <ion-searchbar color="amarelo" animated="true" placeholder="Encontre a sua sede  "></ion-searchbar>
 
-  <ion-card>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+  <ion-card color="amarelo">
+    <img src="https://www.pontagrossa.pr.gov.br/files/fotos/moto_fest_3.jpg" />
     <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title class="ion-text-center">Moto-taxi do Zezinho </ion-card-title>
     </ion-card-header>
 
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
+
+
+    <ion-card-content class="ion-text-center">
+      O melhor moto-taxi da região!!!<br> Serviço 24 Horas <br> Atendemos em todos os bairros
     </ion-card-content>
+
+    <ion-item lines="none" color="amarelo">
+      <ion-badge color="success" slot="start">On 10</ion-badge> <div class="estrelas">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </div>
+      <ion-badge color="danger" slot="end">11 Off</ion-badge>
+    </ion-item>
   </ion-card>
 
 
-  <ion-grid>
-    <ion-row>
-      <ion-col routerLink="/moto-taxi" size="6" size-md="4" size-lg="2">
-        <ion-card color="amarelo">
-          <ion-card-subtitle class="ion-text-center">Moto-Taxi</ion-card-subtitle>
-          <img src="https://raw.githubusercontent.com/Kesllys/TCC/main/Ellipse%207.png" alt="">
-        </ion-card>
-      </ion-col>
+  <ion-card color="amarelo">
+    <img src="https://www.pontagrossa.pr.gov.br/files/fotos/moto_fest_3.jpg" />
+    <ion-card-header>
+      <ion-card-title>Moto-taxi do Zezinho</ion-card-title>
+      <ion-card-subtitle>24 horas on!!!</ion-card-subtitle>
+    </ion-card-header>
 
-      <ion-col size="6" size-md="4" size-lg="2">
-        <ion-card color="amarelo">
-          <ion-card-subtitle class="ion-text-center">Moto-Taxi</ion-card-subtitle>
-          <img src="https://raw.githubusercontent.com/Kesllys/TCC/main/Ellipse%207.png" alt="">
-        </ion-card>
-      </ion-col>
-
-
-
-      <ion-col size="6" size-md="4" size-lg="2">
-        <ion-card color="amarelo">
-          <ion-card-subtitle class="ion-text-center">Moto-Taxi</ion-card-subtitle>
-          <img src="https://raw.githubusercontent.com/Kesllys/TCC/main/Ellipse%207.png" alt="">
-        </ion-card>
-      </ion-col>
-
-      <ion-col size="6" size-md="4" size-lg="2">
-        <ion-card color="amarelo">
-          <ion-card-subtitle class="ion-text-center">Moto-Taxi</ion-card-subtitle>
-          <img src="https://raw.githubusercontent.com/Kesllys/TCC/main/Ellipse%207.png" alt="">
-        </ion-card>
-      </ion-col>
-
-    </ion-row>
-
-  </ion-grid>
+    <ion-card-content>
+        <ion-item lines="none" color="amarelo">
+          <ion-badge color="success" slot="start">On 10</ion-badge> <ion-badge color="danger" slot="end">11 Off</ion-badge>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
