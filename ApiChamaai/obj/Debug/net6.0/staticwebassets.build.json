@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WmMnTTvkE2d6QsdefURBW42QBE7gRcTsGyvWrCu26GE=",
+  "Source": "ApiChamaai",
+  "BasePath": "_content/ApiChamaai",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
